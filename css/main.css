@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu|Noto+Sans);
+
+/*/////////  GLOBAL /////////*/
+body {
+  background-image: url(../images/berries.jpg);
+  background-position: 50%;
+  font-size: 100%;
+}
+
+html body#index {
+  background-image: url(../images/plate.jpg);
+  background-position: 50%;
+}
+
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  background: rgba(148, 148, 184, 0.8); 
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  
+}
+
+h1, h2, h3, h4, h5, p {
+font-family: 'Noto Sans', sans-serif;
+text-align: center;
+color: white;
+}
+
+a {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4em;
+  padding-top: 30px;
+}
+
+h2 {
+  padding-top: 0px;
+}
+
+h3 {
+  padding-top: 8px;
+}
+
+h4 {
+  padding-top: 8px;
+}
+
+header {
+  margin: 0 0 66px;
+}
+
+button {
+  background-color:#e5ecff;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  color:black;
+  padding:13px 32px;
+  margin-top:20px;
+}
+
+section {
+  padding-top: 10px;
+}
+
+p {
+   color: #2b3143;
+}
+.col-2 p {
+  padding: 0 5px 0 10px;
+}
+
+.col-1 p {
+  padding-right: 10px;
+}
+
+#space {
+  padding-top: 5%;
+ }
+
+#space h3{
+  padding-bottom: 5px;
+}
+#space a {
+  font-size: 1.25em;
+  line-height: 1.6em;
+  color: #2b3143  ;
+  text-decoration: none;
+}
+#space a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+/*////////// MAPS GEOLOCATION//////////*/
+
+#map {
+  height: 400px;
+  width: 600px;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#target {
+  width: 345px;
+}
+
+/*///////// LAYOUT /////////*/
+
+.col-1 {
+  float: left;
+  width: 32%;
+}
+
+.col-2 {
+  float: left;
+  width: 66%;
+}
+
+.col-3 {
+  float:left;
+  width: 100%;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0%;
+}
+
+.right {
+  float: right;
+}
+
+/*/////////  FIXES /////////*/
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/*//////////SELECTOR MENU//////*/
+select {
+   margin: 30px;
+   border: 1px solid #111;
+   background: transparent;
+   width: 150px;
+   padding: 5px 35px 5px 5px;
+   font: 'Ubuntu', sans-serif;
+   font-size: 16px;
+   border: 1px solid #b3c5ff;
+   height: 34px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+    background: rgb(204, 204, 255);
+    color: black;
+} 
+
+/*///// INPUT ////////*/
+
+input {
+  margin: 0;
+  padding-left: 10px;
+  width: 30%;
+  height: 2em;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+} 
+
+
+/*////// NAV BAR /////////*/
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+}
+
+
+#menu-links {
+  background: #e5ecff;
+  border-left: 1px solid #b3c5ff;
+}
+
+
+#navbar nav a {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  padding: 24px 0; 
+  text-transform: uppercase;
+  color: #666699;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid #b3c5ff;
+  font: 1em 'Ubuntu', sans-serif;
+  
+}
+
+#navbar nav a.selected {
+  background: #838ee2;
+  color: #e5ecff;
+  padding: 24px 0 14px 0;
+  border-bottom: 10px solid #b3c5ff;
+
+}
+
+#navbar nav a:hover {
+  font-color: #666699;
+  font: 1em 'Ubuntu', sans-serif;
+  background: rgba(131, 142, 226, 0.93);
+  color: #e5ecff;
+}
+
+#navbar nav a.menu-icon {
+  display: none;
+}
